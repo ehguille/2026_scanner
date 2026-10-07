@@ -10,7 +10,9 @@ public class Aplicacion {
 		String nombre=s.nextLine();
 		System.out.println("Introduce tus apellidos:");
 		String apellidos=s.nextLine();
-		Persona otraPersona=new Persona(nombre, apellidos);
+		System.out.println("Introduce tu edad:");
+		int edad=s.nextInt();
+		Persona otraPersona=new Persona(nombre, apellidos,edad);
 		otraPersona.presentarse();
 	}
 	
