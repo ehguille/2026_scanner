@@ -4,9 +4,14 @@ public class Aplicacion {
 	
 	public Aplicacion() {
 		Scanner s=new Scanner(System.in);
-		System.out.println("¿Cómo te llamas?");
-		String nombre=s.next();
-		saludar(nombre);
+		//Persona p=new Persona("Guillermo","González");
+		//p.presentarse();
+		System.out.println("Introduce tu nombre:");
+		String nombre=s.nextLine();
+		System.out.println("Introduce tus apellidos:");
+		String apellidos=s.nextLine();
+		Persona otraPersona=new Persona(nombre, apellidos);
+		otraPersona.presentarse();
 	}
 	
 	public void saludar(String persona) {
